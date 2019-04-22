@@ -11,10 +11,12 @@ module.exports = app => {
     article_title: STRING(100),
     article_desc: STRING(100),
     article_type: STRING(32),
+    article_type_name: STRING(32),
     article_author: STRING(32),
     article_url: TEXT,
     file_name: TEXT,
     creator_id: INTEGER,
+    focus_people: TEXT,
   });
 
   return User;
