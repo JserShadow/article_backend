@@ -64,7 +64,6 @@ module.exports = appInfo => {
       db: 0,
     },
   };
-
   return {
     ...config,
     ...userConfig,

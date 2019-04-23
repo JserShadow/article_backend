@@ -13,6 +13,9 @@ exports.sequelize = {
   enable: true,
   package: 'egg-sequelize',
 };
+exports.static = {
+  enable: true,
+};
 // module.exports = {
 //   // had enabled by egg
 //   // static: {

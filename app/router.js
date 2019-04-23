@@ -6,7 +6,7 @@ const addPrefix = router => `/back_end/${router}`;
  * @param {Egg.Application} app - egg application
  */
 module.exports = app => {
-  const { router, controller: { users, articles } } = app;
+  const { router, controller: { users, articles, home } } = app;
   /**
    * users
    * @desc 处理用户登录、注册、登出
@@ -37,4 +37,6 @@ module.exports = app => {
   router.post(addPrefix('article/focus'), articles.focus);
   router.post(addPrefix('article/unfocus'), articles.unfocus);
   router.get(addPrefix('article/focus_list'), articles.getFocusList);
+
+  router.get('*', home.index); // 上面是接口，其余所有路径都打到前端
 };
