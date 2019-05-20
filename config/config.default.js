@@ -25,7 +25,7 @@ module.exports = appInfo => {
   const userConfig = {
     accessKey: 'DhsDWIMUrCTF_R-ff01w9ESN7vvKyLle4hzwYLJf',
     secretKey: 'tgVJBh9Iu_mGFGbdWoiaO_4SJDBc4-hrV4yFJDsi',
-    bucket: 'article',
+    bucket: 'newarticle',
   };
 
   config.security = {
